@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background: rgba(0, 0, 0, .2);
+}
+
+body {
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+    background-color: #ffffff9e;
+}
+
+#text {
+  transform: translate(-25px, -50px);
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+  height: 30%;
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+    height: 100vh;
+    color: #fff;
+}
+
+.sec h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec h3 {
+  color: #fff;
+}
+
+.sec p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+/**/
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: white;
+  margin: 15px 0;
+}
+
+#search-input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  height: 25px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+#search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+#search-btn svg {
+  width: 24px;
+  height: 24px;
+  stroke: hsl(249, 98%, 19%);
+  transition: stroke 0.3s;
+}
+
+#search-btn:hover svg {
+  stroke: #0b72e0;
+}
+
+.line {
+  display: none;
+}
+
+.text {
+  display: none;
+}
+
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: #f0f0f0;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: background-image 0.2s ease-in-out; */
+    
+
+.secondpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #359381;
+    background-size: cover;
+    background-position: 50% 50%;
+    transition: background-image 0.3s ease-in-out, color 0.3s ease;
+    width: 100%;
+    height: 100vh;
+}
+
+svg {
+  width: 680px;
+  height: 680px;
+}
+
+.interface {
+  padding: 1rem;
+
+}
+
+.transformed {
+  transform: scale(1.05);
+  transition: transform 0.3s ease; /* 保留平滑过渡效果 */
+}
+
+
+
+
+
+.segment {
+  transition: transform 0.3s ease; /* 加入过渡效果 */
+  cursor: pointer;
+}
+
+
+
+/* 选中状态的效果 */
+.selected {
+  transform: scale(1.05);
+  /* 可以添加其他样式，例如颜色加深 */
+}
+
+/* 其他样式保持不变 */
+
+.dry-woods {
+  transform-origin: 20% 0%;
+}
+
+.aromatic {
+  transform-origin: 35% 0%;
+}
+
+.citrus {
+  transform-origin: 55% 0%;
+}
+
+.water {
+  transform-origin: 90% 0%;
+}
+
+.green {
+  transform-origin: 100% 25%;
+}
+
+.fruity {
+  transform-origin: 100% 50%;
+}
+
+.floral {
+  transform-origin: 100% 75%;
+}
+
+.soft-floral {
+  transform-origin: 90% 100%;
+}
+
+.floral-oriental {
+  transform-origin: 60% 100%;
+}
+
+.soft-oriental {
+  transform-origin: 35% 100%;
+}
+
+.oriental {
+  transform-origin: 10% 100%;
+}
+
+.woody-oriental {
+  transform-origin: 0% 70%;
+}
+
+.woods {
+  transform-origin: 0% 50%;
+}
+
+.mossy-woods {
+  transform-origin: 0% 25%;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* 按钮之间的间距 */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* 按钮之间的间距 */
+}
+
+.round-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s ease; /* 按钮按下时的效果 */
+}
+
+.round-button:active {
+  transform: scale(0.95); /* 按下时缩小效果 */
+}
+
+
+
+.button-container {
+  display: flex;
+  gap: 10px; /* 按钮之间的间距 */
+}
+
+.button-selected {
+  background-color: #0056b3; /* 选中状态的颜色 */
+}
+
+.thirdpage {
+  background-color: #007bff;
+  display: flex;
+  width: 100%;
+    height: 100vh;
+}
+
+@keyframes fall {
+  0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      z-index: 1;
+  }
+  100% {
+      transform: translateY(150vh) rotate(360deg);
+      opacity: 0;
+      z-index: -1;
+  }
+}
+
+.fall-animation {
+  animation: fall 3s forwards; /* Adjust duration as needed */
+}
+
+
+/* @keyframes inpot {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+    z-index: 1;
+  }
+
+  50% {
+    transform: translate(0, 0) rotate(360deg);
+    opacity: 1;
+    z-index: 1;
+  }
+
+  100% {
+    transform: translate(0, 0) rotate(720deg);
+    opacity: 0;
+    z-index: 1;
+  }
+} */
+
+.rightcolumn {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.thirdpage {
+  position: relative;
+}
+
+.flower {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.description {
+  display: none;
+  max-width: 360px; /* 根据需要调整宽度 */
+  overflow-wrap: break-word; /* 自动换行 */
+  word-wrap: break-word; /* 兼容旧浏览器 */
+  overflow: hidden; /* 超出内容隐藏 */
+  padding: 10px; /* 可选的内边距 */
+  border: 1px solid #ccc; /* 可选的边框 */
+  border-radius: 5px; /* 可选的圆角 */
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.244);
+}
+
+.finishbox {
+  width: 100%;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* .finishbutton {
+  width: 100%;
+  padding: 10px 20px;
+  
+  border-color: #000;
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+} */
+
+.finishbutton {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* 50%透明白色 */
+  border: 2px solid black; /* 黑色实线边框 */
+  color: black; /* 黑色字体 */
+  padding: 10px 20px; /* 内边距 */
+  font-size: 16px; /* 字体大小 */
+  font-weight: bold;
+  cursor: pointer; /* 鼠标指针 */
+  border-radius: 20px;
+  transition: background-color 0.3s; /* 背景色过渡效果 */
+}
+
+.finishbutton:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* 悬停时背景变为80%透明 */
+}
+
+.newsection {
+  position: absolute;
+  height: 100vh; 
+  width: 100%;
+  background-color: lightgray;
+  display: none;
+}
+
+/* .newsection-activated {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  overflow: hidden;
+  grid-gap: 10px;
+  grid-template-areas:
+    ". . . . . . . . . . . ."
+    ". . . . hd hd hd hd . . . ."
+    ". . . . sd sd sd sd . . . ."
+    ". . . lc . or . rk . . . ."
+    ". . ir . . . . . st . . ."
+    ". gd . pt pt pt pt pt pt . v ."
+    ". . . pt pt pt pt pt pt . . ."
+    ". . . pt pt pt pt pt pt . . .";
+} */
+
+.newsection-activated {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.ingredients {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ingredient {
+  cursor: pointer;
+}
+
+.pot {
+  /* grid-area: pt; */
+  width: 600px;
+  height: 400px;
+  z-index: 1;
+  /* position: absolute;
+  bottom: 0;
+  left: 300px; */
+  /* grid-column: 4 / 8;
+  grid-row: 5 / 8; */
+  /* transform: translate(0,100px); */
+}
+
+.ingredient {
+  width: 150px;
+  height: 150px;
+}
+
+.add-ingredients {
+  grid-area: hd;
+}
+
+.click-ingredients {
+  grid-area: sd;
+  
+}
+
+.gardenia {
+  transform: translate(80px,250px);
+}
+
+.iris {
+  transform: translate(20px,125px);
+}
+
+.litchi {
+  transform: translate(0,50px);
+}
+
+.orange {
+  transform: translate(0,25px);
+}
+
+.rock {
+  transform: translate(0,50px);
+}
+
+.styrax {
+  transform: translate(0,125px);
+}
+
+.vanilla {
+  transform: translate(0,250px);
+}
+
+@keyframes squashStretch {
+  0%, 100% {
+    transform-origin: 50% 100%; /* 变形原点在图片底边的中点 */
+    transform: scaleY(1); /* 原始高度 */
+  }
+  25% {
+    transform-origin: 50% 100%;
+    transform: scaleY(0.75); /* 压扁到50%的高度 */
+  }
+  50% {
+    transform-origin: 50% 100%;
+    transform: scaleY(1.25); /* 拉伸到150%的高度 */
+  }
+  75% {
+    transform-origin: 50% 100%;
+    transform: scaleY(0.75); /* 再次压扁到50%的高度 */
+  }
+}
+
+.squash-stretch-animation {
+  animation: squashStretch 2s forwards;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 黑色半透明 */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* 让弹出框从底部向上滑动 */
+  z-index: 1000;
+}
+
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 30%;
+  transform: translateY(100%); /* 初始状态在视图外 */
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.submit-button {
+  padding: 5px 25px;
+  border: #007bff;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.1s ease; /* 按钮按下时的效果 */
+}
+
+.submit-button:active {
+  transform: scale(0.95); /* 按下时缩小效果 */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  height: 40px;
+  gap: 10px; /* 按钮之间的间距 */
+}
+
+.cancel-button {
+  background-color: rgba(255, 255, 255); /* 50%透明白色 */
+  border: 2px solid black; /* 黑色实线边框 */
+  color: black; /* 黑色字体 */
+  padding: 5px 25px; /* 内边距 */
+  font-size: 16px; /* 字体大小 */
+  cursor: pointer; /* 鼠标指针 */
+  border-radius: 20px;
+}
+
+.cancel-button:active {
+  transform: scale(0.95); /* 按下时缩小效果 */
+}
+
+#email{
+  
+  padding: 10px;
+  height: 30px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100%;
+}
+#phone{
+  
+  padding: 10px;
+  height: 30px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+#address {
+  
+  padding: 10px;
+  height: 30px;
+  width: 300px;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100%;
+}
+
+#last-step {
+
+}
+
+#how {
+  padding-bottom: 2rem;
+  
+}
+

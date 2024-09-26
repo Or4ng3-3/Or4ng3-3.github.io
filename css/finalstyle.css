@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body {
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+#flowers {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    right: 0;
+    bottom: 0;
+}
+
+.container {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.done {
+    margin-top: 30px;
+    width: 30%;
+    background-color: rgba(255, 255, 255); /* 50%透明白色 */
+    border: 2px solid black; /* 黑色实线边框 */
+    color: black; /* 黑色字体 */
+    padding: 5px 25px; /* 内边距 */
+    font-size: 16px; /* 字体大小 */
+    cursor: pointer; /* 鼠标指针 */
+    border-radius: 20px;
+}
+
+.done:active {
+    transform: scale(0.95); /* 按下时缩小效果 */
+}
+  
