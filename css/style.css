@@ -427,7 +427,7 @@ svg {
   position: absolute;
   height: 100vh; 
   width: 100%;
-  background-color: lightgray;
+  background-color: #f9f9f9;
   display: none;
 }
 
